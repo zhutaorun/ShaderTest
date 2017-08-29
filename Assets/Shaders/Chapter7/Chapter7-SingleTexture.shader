@@ -36,7 +36,7 @@ Shader "Unity Shaders Book/Chapter 7/Single Texture" {
 				float4 pos : SV_POSITION;
 				float3 worldNormal :TEXCOORD0;
 				float3 worldPos : TEXCOORD1;
-				float3 uv : TEXCOORD2;
+				float2 uv : TEXCOORD2;
 			};
 
 			v2f vert(a2v v){
@@ -61,7 +61,7 @@ Shader "Unity Shaders Book/Chapter 7/Single Texture" {
 
 				fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz * _Color.rgb;
 
-				fixed3 diffuse = _LightColor0.rgb * albedo* max(0,dot(worldNoraml,worldLightDir));
+				fixed3 diffuse = _LightColor0.rgb * albedo* max(0,dot(worldNormal,worldLightDir));
 
 				fixed3 viewDir = normalize(UnityWorldSpaceViewDir(i.worldPos));
 				fixed3 halfDir = normalize(worldLightDir+viewDir);
