@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c6ace2e955cd0ef4e91b4ac1c43e2425
+timeCreated: 1590061458
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - waveShader: {fileID: 4800000, guid: c8e689fb286a25f4bb59504f37ca6544, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
